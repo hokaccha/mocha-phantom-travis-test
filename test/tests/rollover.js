@@ -18,6 +18,6 @@ describe('jquery.rollover', function() {
     expect($img.attr('src')).to.be(on);
 
     $img.trigger('mouseleave');
-    expect($img.attr('src')).to.be(off);
+    expect($img.attr('src')).to.not.be(off);
   });
 });

@@ -1,7 +1,7 @@
 describe('jquery.rollover', function() {
   var $img;
-  var off = '../../example/menu01_off.png';
-  var on = '../../example/menu01_on.png';
+  var off = '../example/menu01_off.png';
+  var on = '../example/menu01_on.png';
 
   beforeEach(function() {
     $img = $('<img>').attr('src', off).rollover();

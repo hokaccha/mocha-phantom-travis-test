@@ -45,13 +45,15 @@ class Reporter
     @page = webpage.create()
     @page.onConsoleMessage = (msg) -> console.log msg
     @page.onInitialized = =>
-      @page.evaluate ->
+      @page.evaluate (env)->
         window.mochaPhantomJS =
+          env: env
           failures: 0
           ended: false
           started: false
           run: ->
             mochaPhantomJS.started = true
+      , system.env
 
   loadPage: ->
     @page.open @url

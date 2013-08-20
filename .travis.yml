@@ -1,1 +1,7 @@
 script: phantomjs test/lib/mocha-phantomjs.coffee test/index.html
+env:
+  - JQUERY_VERSION=1.6.4
+  - JQUERY_VERSION=1.7.2
+  - JQUERY_VERSION=1.8.3
+  - JQUERY_VERSION=1.10.2
+  - JQUERY_VERSION=2.0.2

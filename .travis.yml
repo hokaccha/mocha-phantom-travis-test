@@ -1,4 +1,6 @@
 language: node_js
+node_js:
+  - 0.8
 script: npm test
 env:
   - JQUERY_VERSION=1.6.4

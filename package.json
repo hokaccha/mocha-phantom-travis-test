@@ -2,7 +2,7 @@
   "name": "mocha-phantom-travis-test",
   "version": "0.0.0",
   "devDependencies": {
-    "mocha-phantomjs": "git://github.com/hokaccha/mocha-phantomjs.git#topic/set-env"
+    "mocha-phantomjs": "3.1.2"
   },
   "scripts": {
     "test": "./node_modules/.bin/mocha-phantomjs test/index.html"
